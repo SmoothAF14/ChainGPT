@@ -1,0 +1,77 @@
+[
+  {
+    "domain": "crypto",
+    "title": "Bitcoin overview",
+    "text": "Bitcoin is a decentralized digital asset secured by proof of work. Good explanations should cover custody, volatility, transfer fees, and why settlement finality matters."
+  },
+  {
+    "domain": "crypto",
+    "title": "Wallet safety",
+    "text": "Crypto wallets can be custodial or self-custody. Guidance should recommend protecting seed phrases offline, verifying addresses before sending funds, and using hardware wallets for larger balances."
+  },
+  {
+    "domain": "crypto",
+    "title": "Exchange basics",
+    "text": "Centralized exchanges provide account-based trading and custody, while on-chain transfers move assets directly on the network. Answers should mention fees, withdrawals, and counterparty risk."
+  },
+  {
+    "domain": "defi",
+    "title": "DeFi mechanics",
+    "text": "Decentralized finance covers swaps, lending, borrowing, staking, and liquidity pools. Good explanations should discuss smart-contract risk, oracle dependence, liquidity depth, and impermanent loss."
+  },
+  {
+    "domain": "defi",
+    "title": "Yield and staking risk",
+    "text": "High yields can come from token emissions, leverage, or temporary incentives. Explain where yield comes from, what can break, and why APR is not the same as sustainable return."
+  },
+  {
+    "domain": "defi",
+    "title": "Governance risk",
+    "text": "DAO governance can change parameters, fees, and incentive structures. Explanations should note that governance rights do not guarantee economic value and can still be dominated by large holders."
+  },
+  {
+    "domain": "tokenomics",
+    "title": "Supply and emissions",
+    "text": "Tokenomics should cover circulating supply, max supply, emissions, unlock schedules, and vesting. Strong explanations connect these factors to price pressure and user incentives."
+  },
+  {
+    "domain": "tokenomics",
+    "title": "Utility and incentives",
+    "text": "A token may be used for fees, governance, staking, access, or rewards. Answers should separate real utility from speculative demand and identify whether incentives are sustainable."
+  },
+  {
+    "domain": "tokenomics",
+    "title": "FDV versus market cap",
+    "text": "Fully diluted valuation can differ sharply from market cap when supply is still unlocking. Explanations should highlight why unlock timing matters and why a low market cap can still be expensive on an FDV basis."
+  },
+  {
+    "domain": "trading",
+    "title": "Market structure",
+    "text": "Market structure answers should explain order books, liquidity, spreads, slippage, maker-taker fees, and how volatility affects execution quality."
+  },
+  {
+    "domain": "trading",
+    "title": "Technical levels",
+    "text": "Support and resistance are useful framing tools, but they are not guarantees. Explain them as areas of interest influenced by liquidity and market participation."
+  },
+  {
+    "domain": "trading",
+    "title": "Risk framing",
+    "text": "Trading explanations should mention position sizing, stop-loss discipline, time horizon, and the fact that leverage increases both upside and downside risk."
+  },
+  {
+    "domain": "blockchain_dev",
+    "title": "Smart contract basics",
+    "text": "Smart contracts are programs deployed on-chain. Good answers should explain state, transactions, events, gas costs, and the immutability of deployed code."
+  },
+  {
+    "domain": "blockchain_dev",
+    "title": "Solidity development",
+    "text": "Solidity explanations should cover contract structure, storage versus memory, modifiers, access control, testing, and common vulnerabilities such as reentrancy and integer mistakes."
+  },
+  {
+    "domain": "blockchain_dev",
+    "title": "Deployment and debugging",
+    "text": "Development guidance should include local testing, deployment scripts, contract verification, and how to inspect transactions or trace failures on testnets and explorers."
+  }
+]
