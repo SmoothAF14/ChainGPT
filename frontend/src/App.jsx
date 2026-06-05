@@ -25,6 +25,12 @@ const systemTags = [
   'CHAINGPT CONSOLE',
 ]
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || ''
+
+function apiUrl(path) {
+  return `${API_BASE_URL}${path}`
+}
+
 const starterMessage = {
   id: 'welcome',
   role: 'assistant',
@@ -308,7 +314,7 @@ export default function App() {
   useEffect(() => {
     const checkBackend = async () => {
       try {
-        const response = await fetch('/api/health')
+        const response = await fetch(apiUrl('/api/health'))
         setConnectionStatus(response.ok ? 'connected' : 'offline')
       } catch {
         setConnectionStatus('offline')
@@ -329,7 +335,7 @@ export default function App() {
     setLoading(true)
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(apiUrl('/api/chat'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

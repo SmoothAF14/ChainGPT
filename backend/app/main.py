@@ -10,10 +10,12 @@ app = FastAPI(
   description="FastAPI backend for ChainGPT.",
 )
 
+allow_all_origins = SETTINGS.cors_origins == ["*"]
+
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=SETTINGS.cors_origins or ["*"],
-  allow_credentials=True,
+  allow_origins=["*"] if allow_all_origins else (SETTINGS.cors_origins or ["*"]),
+  allow_credentials=not allow_all_origins,
   allow_methods=["*"],
   allow_headers=["*"],
 )

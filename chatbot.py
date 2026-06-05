@@ -1,8 +1,11 @@
+import os
+
 import uvicorn
 
 
 def main() -> None:
-  uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8000, reload=False)
+  port = int(os.getenv("PORT", "8000"))
+  uvicorn.run("backend.app.main:app", host="0.0.0.0", port=port, reload=False)
 
 
 if __name__ == "__main__":
