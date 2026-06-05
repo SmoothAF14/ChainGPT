@@ -4,7 +4,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from backend.app.services.domains import DOMAIN_PROFILES, DOMAIN_ORDER
+from app.services.domains import DOMAIN_PROFILES, DOMAIN_ORDER
 
 
 STOPWORDS = {

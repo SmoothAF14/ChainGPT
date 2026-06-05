@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException
 
-from backend.app.schemas.chat import ChatRequest, ChatResponse, HealthResponse
-from backend.app.services.chat_service import generate_reply
-from backend.app.services.domains import list_domains
-from backend.app.services.openrouter import OpenRouterError
+from app.schemas.chat import ChatRequest, ChatResponse, HealthResponse
+from app.services.chat_service import generate_reply
+from app.services.domains import list_domains
+from app.services.openrouter import OpenRouterError
 
 router = APIRouter(prefix="/api", tags=["chat"])
 

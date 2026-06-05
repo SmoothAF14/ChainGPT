@@ -1,7 +1,7 @@
 import json
 from urllib import error, request
 
-from backend.app.core.config import SETTINGS
+from app.core.config import SETTINGS
 
 
 class OpenRouterError(RuntimeError):

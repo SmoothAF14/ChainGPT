@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.api.routes import router
-from backend.app.core.config import SETTINGS
+from app.api.routes import router
+from app.core.config import SETTINGS
 
 app = FastAPI(
   title="ChainGPT API",

@@ -1,5 +1,5 @@
-from backend.app.services.openrouter import ask_openrouter
-from backend.app.services.rag import build_system_prompt, detect_domain, format_context, retrieve_context
+from app.services.openrouter import ask_openrouter
+from app.services.rag import build_system_prompt, detect_domain, format_context, retrieve_context
 
 
 def generate_reply(message: str, requested_domain: str | None = None) -> tuple[str, str, list[dict[str, str]]]:
